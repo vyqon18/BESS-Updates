@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gujarat BESS: Tactical Outlook for Commercial Modelling (2025–26) | VYQON Research</title>
+  <meta name="description" content="A concise tactical outlook on what’s shaping BESS commercial modelling and operating assumptions in Gujarat’s upcoming tranches—tariff benchmarks, banking charges, and developer scope risks." />
+  <meta name="author" content="VYQON Research Pvt. Ltd." />
+
+  <!-- Canonical / Source -->
+  <link rel="canonical" href="https://vyqon18.github.io/GERC-Update/#circulars" />
+
+  <!-- Open Graph (LinkedIn) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Gujarat BESS: Tactical Outlook for Commercial Modelling (2025–26)" />
+  <meta property="og:description" content="Benchmarks for capacity rent, banking/open-access charges, Phase VII tariff compression, and developer scope risks—what to bake into term-sheet base cases now." />
+  <meta property="og:url" content="https://vyqon18.github.io/GERC-Update/#circulars" />
+  <!-- IMPORTANT: LinkedIn requires an absolute URL for og:image. Replace with your hosted 1200×627 banner. -->
+  <meta property="og:image" content="https://vyqon18.github.io/GERC-Update/assets/og-vyqon-bess-1200x627.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+
+  <!-- Twitter (optional, still useful) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gujarat BESS: Tactical Outlook for Commercial Modelling (2025–26) | VYQON Research" />
+  <meta name="twitter:description" content="Capacity rent benchmarks, banking charge floor, tariff compression signals, and interconnection scope—key modelling assumptions for Gujarat BESS tranches." />
+  <meta name="twitter:image" content="https://vyqon18.github.io/GERC-Update/assets/og-vyqon-bess-1200x627.png" />
+
+  <!-- Minimal, clean styling -->
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a2f;
+      --muted:#a9b4c8;
+      --text:#eaf0ff;
+      --accent:#2dd4bf;
+      --accent2:#60a5fa;
+      --line:rgba(255,255,255,.10);
+      --shadow: 0 18px 50px rgba(0,0,0,.35);
+      --radius:18px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 12% 8%, rgba(45,212,191,.20), transparent 60%),
+        radial-gradient(900px 600px at 88% 10%, rgba(96,165,250,.18), transparent 55%),
+        linear-gradient(180deg, #070b14 0%, #0b1220 45%, #070b14 100%);
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding: 28px 18px 60px;}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding: 14px 16px; border:1px solid var(--line);
+      border-radius: var(--radius); background: rgba(15,26,47,.65);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .brand{display:flex; align-items:center; gap:12px; min-width: 260px;}
+    .logo{
+      width:48px; height:48px; border-radius: 14px;
+      background: rgba(255,255,255,.06);
+      display:grid; place-items:center; overflow:hidden;
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .brand h1{font-size:14px; margin:0; letter-spacing:.4px;}
+    .brand p{margin:2px 0 0; font-size:12px; color:var(--muted)}
+    .cta{
+      display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px; padding:10px 12px;
+      border-radius: 12px; border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      text-decoration:none;
+      font-size:13px; color: var(--text);
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.18);}
+    .btn.primary{border-color: rgba(45,212,191,.45); background: rgba(45,212,191,.10);}
+    .hero{
+      margin-top:18px;
+      padding: 26px 22px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(15,26,47,.80), rgba(15,26,47,.55));
+      box-shadow: var(--shadow);
+    }
+    .kicker{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:6px 10px; border-radius: 999px;
+      background: rgba(96,165,250,.12);
+      border: 1px solid rgba(96,165,250,.28);
+      color: #d8e8ff;
+      font-size:12px;
+    }
+    .hero h2{margin:12px 0 8px; font-size: 30px; line-height:1.15}
+    .hero p{margin:0; color:var(--muted); font-size:15px; line-height:1.55; max-width: 78ch;}
+    .grid{
+      display:grid; gap:14px;
+      grid-template-columns: 1.05fr .95fr;
+      margin-top:14px;
+    }
+    @media (max-width: 920px){ .grid{grid-template-columns: 1fr;} .brand{min-width:auto;} }
+    .card{
+      padding:18px 18px;
+      border-radius: var(--radius);
+      border:1px solid var(--line);
+      background: rgba(15,26,47,.62);
+      box-shadow: 0 14px 40px rgba(0,0,0,.26);
+    }
+    .card h3{margin:0 0 10px; font-size:16px;}
+    .card .sub{color: var(--muted); font-size:13px; margin:-4px 0 12px;}
+    .bullets{margin:0; padding-left: 18px; color: var(--text); }
+    .bullets li{margin: 8px 0; color: var(--text); line-height:1.5}
+    .bullets li span{color: var(--muted)}
+    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .pill{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      padding:8px 10px; border-radius: 999px;
+      font-size:12px; color: var(--muted);
+    }
+    .pill b{color: var(--text); font-weight:600}
+    .table{
+      width:100%;
+      border-collapse: collapse;
+      overflow:hidden;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.02);
+    }
+    .table th, .table td{
+      padding: 12px 12px;
+      border-bottom:1px solid var(--line);
+      vertical-align:top;
+      text-align:left;
+      font-size: 13px;
+      line-height:1.45;
+    }
+    .table th{color:#cfe3ff; background: rgba(96,165,250,.08); font-weight:600;}
+    .table tr:last-child td{border-bottom:none;}
+    .tag{
+      display:inline-flex; align-items:center;
+      padding: 2px 8px; border-radius:999px;
+      border:1px solid rgba(45,212,191,.30);
+      background: rgba(45,212,191,.10);
+      color:#ccfff6;
+      font-size:12px;
+      margin-right:8px;
+      white-space:nowrap;
+    }
+    .footer{
+      margin-top:18px;
+      padding:18px 16px;
+      border-radius: var(--radius);
+      border:1px solid var(--line);
+      background: rgba(15,26,47,.55);
+      color: var(--muted);
+      font-size: 13px;
+      display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:space-between;
+    }
+    .fine{color: var(--muted); font-size:12px; margin-top:8px; line-height:1.5}
+    .hr{height:1px; background: var(--line); margin: 14px 0;}
+    .quote{
+      border-left: 3px solid rgba(45,212,191,.60);
+      padding: 10px 12px;
+      margin: 12px 0 0;
+      background: rgba(45,212,191,.06);
+      border-radius: 12px;
+      color: #dffdf8;
+      font-size: 13px;
+      line-height:1.55;
+    }
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Gujarat BESS: Tactical Outlook for Commercial Modelling (2025–26)",
+    "author": { "@type": "Organization", "name": "VYQON Research Pvt. Ltd." },
+    "publisher": { "@type": "Organization", "name": "VYQON Research Pvt. Ltd." },
+    "mainEntityOfPage": "https://vyqon18.github.io/GERC-Update/#circulars",
+    "description": "A concise tactical outlook on what’s shaping BESS commercial modelling and operating assumptions in Gujarat’s upcoming tranches—tariff benchmarks, banking charges, and developer scope risks."
+  }
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- Header / Branding -->
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-label="VYQON logo">
+          <!-- Embedded logo (self-contained for the page display) -->
+          <img
+            alt="VYQON Research"
+            style="width:100%;height:100%;object-fit:cover"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQAAQMAAABF07nAAAAAAXNSR0IArs4c6QAAAANQTFRF////p8QbyAAAACdJREFUeJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAABgGQ4AAXo7p4EAAAAASUVORK5CYII="
+          />
+        </div>
+        <div>
+          <h1>VYQON Research Pvt. Ltd.</h1>
+          <p>Energy | Sustainability | Innovation</p>
+        </div>
+      </div>
+
+      <nav class="cta" aria-label="Actions">
+        <a class="btn" href="https://vyqon18.github.io/GERC-Update/#circulars" target="_blank" rel="noopener">View Source (GERC Update)</a>
+        <a class="btn primary" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fvyqon18.github.io%2FGERC-Update%2F%23circulars" target="_blank" rel="noopener">Share on LinkedIn</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="kicker">Gujarat • Battery Energy Storage Systems (BESS) • Commercial Modelling</div>
+      <h2>Tactical Outlook: what will shape BESS term-sheet base cases in Gujarat (2025–26)</h2>
+      <p>
+        Regulators have anchored price discovery and operating-cost assumptions around what the state has authorized in 2025.
+        Below is a practical modelling scaffold—capacity rent benchmarks, banking/open-access drag, tariff compression signals,
+        and developer-scope capex that now sits squarely in your base case.
+      </p>
+
+      <div class="pillrow" aria-label="Quick numbers">
+        <div class="pill"><b>Capacity rent (approved)</b> ₹2.80–₹2.856 lakh/MW-month</div>
+        <div class="pill"><b>Banking charge (OA)</b> ₹1.50/kWh (through Mar 31, 2026)</div>
+        <div class="pill"><b>Phase VII discovery</b> ≈₹1.85–₹1.89 lakh/MW-month</div>
+        <div class="pill"><b>Scope risk</b> Interconnection + metering + bay works</div>
+      </div>
+
+      <div class="quote">
+        <b>Modeling intent:</b> If you bake (A) discovered tariff ceilings, (B) a sticky banking cost floor, and (C) full interconnection & metering capex
+        into term sheets now, you reduce renegotiation risk once BESPA discussions harden.
+      </div>
+    </section>
+
+    <!-- Main Grid -->
+    <section class="grid" aria-label="Key takeaways">
+      <!-- Left: Key points -->
+      <article class="card">
+        <h3>What changed (and why it matters)</h3>
+        <p class="sub">Four items that most directly move cashflows, covenants, and contingency buffers</p>
+        <ol class="bullets">
+          <li>
+            <b>BESS capacity rental benchmarks reset after competitive discovery</b><br/>
+            <span>GERC-approved discovered tariffs for a 500 MW / 1,000 MWh tranche sit around ₹280,000–₹285,600 per MW-month—use as a 2025–26 benchmark for stable capacity rent.</span>
+          </li>
+          <li>
+            <b>Banking / open-access charges remain a real drag</b><br/>
+            <span>The green energy banking charge is retained at ₹1.50/kWh through March 31, 2026—stress test at this level and a higher scenario.</span>
+          </li>
+          <li>
+            <b>Phase VII and beyond signal tariff compression + tighter obligations</b><br/>
+            <span>Phase VII (2,000 MW / 4,000 MWh) discovered ≈₹1.85–₹1.89 lakh/MW-month—implying tighter margins and higher sensitivity to availability/performance.</span>
+          </li>
+          <li>
+            <b>Technical scope is explicitly developer risk</b><br/>
+            <span>Interconnection to GETCO plus associated connectivity, bay works and metering are in developer scope—budget upfront and protect with contingencies and timelines.</span>
+          </li>
+        </ol>
+
+        <div class="hr"></div>
+
+        <h3>Immediate term-sheet guardrails</h3>
+        <ul class="bullets">
+          <li><b>Base case</b>: lock capacity rent assumptions to discovered/approved benchmarks; keep conservative escalation/Indexation stance.</li>
+          <li><b>Opex drag</b>: treat ₹1.50/kWh as a floor; include adverse case for higher charges or tighter banking terms.</li>
+          <li><b>Capex scope</b>: include line + substation bay + metering + commissioning interface costs and schedule float.</li>
+          <li><b>Performance risk</b>: model penalties / availability deductions explicitly; tighter tariffs amplify downside.</li>
+        </ul>
+      </article>
+
+      <!-- Right: Modelling table -->
+      <aside class="card">
+        <h3>Modelling checklist (plug-and-play)</h3>
+        <p class="sub">How to translate the outlook into a financial model in one pass</p>
+
+        <table class="table" role="table" aria-label="Modelling table">
+          <thead>
+            <tr>
+              <th style="width:34%">Model input</th>
+              <th style="width:33%">Base case</th>
+              <th style="width:33%">Stress / sensitivity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag">Revenue</span>Capacity rent</td>
+              <td>₹2.80–₹2.856 lakh/MW-month (benchmark for 2025–26)</td>
+              <td>Downside to Phase VII band (≈₹1.85–₹1.89 lakh/MW-month) for future tranches</td>
+            </tr>
+            <tr>
+              <td><span class="tag">Opex</span>Banking charge</td>
+              <td>₹1.50/kWh through Mar 31, 2026</td>
+              <td>Higher charge scenario; reduced banking window; tighter settlement assumptions</td>
+            </tr>
+            <tr>
+              <td><span class="tag">Capex</span>Grid interconnection</td>
+              <td>Developer bears GETCO connectivity + bay works + metering</td>
+              <td>Cost overrun + delay case (land/ROW, bay availability, commissioning interface)</td>
+            </tr>
+            <tr>
+              <td><span class="tag">Risk</span>Performance obligations</td>
+              <td>Explicitly model deductions/penalties and availability requirements</td>
+              <td>Lower tariff + same penalties = amplified equity IRR downside; covenant headroom test</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="fine">
+          Source reference hub: <a href="https://vyqon18.github.io/GERC-Update/#circulars" target="_blank" rel="noopener"><u>GERC Update (circulars)</u></a>.
+          This page is designed for LinkedIn sharing; replace the <code>og:image</code> URL once your 1200×627 banner is hosted.
+        </div>
+
+        <div class="hr"></div>
+
+        <h3>How to use this in an IC memo</h3>
+        <ul class="bullets">
+          <li><b>1 slide</b>: “Benchmarks + Floors + Scope Risk” (capacity rent, banking charge, interconnection capex).</li>
+          <li><b>1 slide</b>: Sensitivity tornado (rent ↓, banking ↑, interconnection capex ↑, COD delay).</li>
+          <li><b>Decision</b>: proceed only if DSCR and sponsor returns survive the combined downside case.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        <b style="color:var(--text)">VYQON Research Pvt. Ltd.</b><br/>
+        <span>Independent research & advisory across renewables, storage, and energy transition.</span>
+      </div>
+      <div style="text-align:right">
+        <span>For collaborations: <b style="color:var(--text)">VYQON Research</b></span><br/>
+        <span class="fine">© <span id="yr"></span> VYQON Research Pvt. Ltd. | Energy • Sustainability • Innovation</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
